@@ -26,7 +26,10 @@ public class Principal {
 
                     try {
                         double resultado = convertidor.convertirMoneda(monedaOrigen, monedaDestino, cantidad);
-                        System.out.printf("Cantidad convertida: %.2f %s\n", resultado, monedaDestino);
+                        System.out.printf("\n"+
+                                "*****************************************************************************\n"
+                                +"Cantidad convertida: %.2f %s\n", resultado, monedaDestino+
+                                "\n**************************************************************************");
                     } catch (Exception e) {
                         System.out.println("Error: " + e.getMessage());
                     }
